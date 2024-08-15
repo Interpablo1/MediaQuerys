@@ -1,0 +1,158 @@
+/* Estilos generales */
+body {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333333;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: #ffffff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #f0ad4e;
+}
+
+/* Estilos para el menú hamburguesa */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background-color: #ffffff;
+    margin: 4px;
+    width: 25px;
+    height: 3px;
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 50px 15px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.25em;
+    line-height: 1.6;
+}
+
+/* Estilos para la sección de tarjetas */
+.card-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    background-color: #2c2c2c;
+}
+
+.card {
+    background-color: #444444;
+    border: none;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.card h5 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .nav-link {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .nav-link:hover {
+    color: #f0ad4e;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .card-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .card-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .card-section {
+        flex-direction: row;
+    }
+
+    .card {
+        width: 30%;
+    }
+}
